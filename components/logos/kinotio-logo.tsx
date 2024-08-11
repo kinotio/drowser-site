@@ -5,6 +5,8 @@ export const KinotioLogo = (
     viewBox="0 0 2199 648"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-label="Kinotio"
     {...props}
   >
     <path
