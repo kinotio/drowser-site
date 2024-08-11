@@ -1,9 +1,12 @@
 "use client";
 
 import { ChevronRight, Github } from "lucide-react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { tomorrowNightBright } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import { Button } from "@/components/ui/button";
 import GridPattern from "@/components/magicui/grid-pattern";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 import { cn } from "@/lib/utils";
 
@@ -11,7 +14,7 @@ export const HeroSection = () => {
   return (
     <section className="container w-full relative">
       <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
-        <div className="text-center space-y-8">
+        <div className="space-y-8">
           <div className="mx-auto text-center text-4xl md:text-9xl font-bold">
             <h1>Explore new way to write tests</h1>
           </div>
@@ -66,12 +69,31 @@ export const HeroSection = () => {
 };
 
 const CodeBlock = () => {
-  const code = "curl -fsSL https://deno.land/install.sh | sh";
+  const code = `
+  import { driver } from "https://deno.land/x/drowser@v0.1.5/mod.ts";
+
+  driver({ browser: "chrome" })
+    .then(({ service }) => {
+      service.cases = [
+        {
+          name: "Verify Title",
+          fn: async ({ builder, assert }) => {
+            const title = await builder.getTitle();
+            assert.assertEquals(title, "Drowser");
+          },
+        },
+      ];
+    })
+    .catch((error) => console.log(error));
+  `;
 
   return (
-    <div className="rounded-lg p-4 text-white max-w-xl mx-auto">
-      <div className="p-4 font-mono bg-black rounded-lg mt-4 border border-secondary">
-        <code>{code}</code>
+    <div className="rounded-lg p-4 text-white mx-auto max-w-4xl">
+      <div className="relative p-4 bg-black rounded-lg mt-4 border border-secondary">
+        <SyntaxHighlighter language="typescript" style={tomorrowNightBright}>
+          {code}
+        </SyntaxHighlighter>
+        <BorderBeam colorFrom="#fff" colorTo="#fff" />
       </div>
     </div>
   );
