@@ -9,6 +9,7 @@ export const DATA = {
     linkedin: "https://linkedin.com/company/kinotio",
     x: "https://x.com/kinotio_io",
   },
+  repo: "https://github.com/kinotio/drowser",
   keywords: [
     "Drowser",
     "Drowser Studio",

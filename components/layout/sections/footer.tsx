@@ -1,35 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { useTheme } from "next-themes";
 import { icons } from "lucide-react";
 
 import { Icon } from "@/components/ui/icon";
+import { KinotioLogo } from "@/components/logos/kinotio-logo";
 
 import { getCurrentYear } from "@/lib/utils";
 
 import { DATA } from "@/data";
 
 export const FooterSection = () => {
-  const { theme } = useTheme();
-
   return (
     <footer id="footer" className="bg-card border-t border-secondary w-full">
       <div className="container py-24 sm:py-32 p-10 w-full place-items-stretch">
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 gap-x-12 gap-y-8 z-50">
           <div className="col-span-full xl:col-span-2">
             <Link href="/" className="flex font-bold items-center">
-              <Image
-                src={
-                  theme === "light" ? "/kinotio-dark.png" : "/kinotio-light.png"
-                }
-                width={100}
-                height={100}
-                alt="Kinotio"
-                className="ml-2"
-                priority
-              />
+              <KinotioLogo width={100} height={50} />
             </Link>
           </div>
 
@@ -41,11 +29,7 @@ export const FooterSection = () => {
                 href={contact.href}
                 className="flex gap-2 items-center opacity-60 hover:opacity-100"
               >
-                <Icon
-                  name={contact.icon as keyof typeof icons}
-                  size={18}
-                  color={theme === "light" ? "black" : "white"}
-                />
+                <Icon name={contact.icon as keyof typeof icons} size={18} />
                 {contact.label}
               </Link>
             ))}
