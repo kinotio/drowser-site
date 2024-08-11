@@ -10,11 +10,8 @@ export const HeroSection = () => {
     <section className="container w-full h-[85vh] relative">
       <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
-            <h1>
-              A easy way to implement and write Selenium with TypeScript using
-              Deno
-            </h1>
+          <div className="mx-auto text-center text-4xl md:text-9xl font-bold">
+            <h1>Explore new way to write tests</h1>
           </div>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
