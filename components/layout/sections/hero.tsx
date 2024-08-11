@@ -25,7 +25,9 @@ export const HeroSection = () => {
             <div className="mt-6 gap-2 flex justify-center">
               <Button
                 className="w-5/6 md:w-1/4 font-bold group/arrow"
-                onClick={() => {}}
+                onClick={() => {
+                  window.open("/docs", "_blank");
+                }}
               >
                 Documentation
                 <ChevronRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
@@ -33,7 +35,9 @@ export const HeroSection = () => {
               <Button
                 className="w-5/6 md:w-1/4 font-bold group/arrow"
                 variant="outline"
-                onClick={() => {}}
+                onClick={() => {
+                  window.open("https://github.com/kinotio/drowser", "_blank");
+                }}
               >
                 <Github className="size-5 mr-2" />
                 Github
