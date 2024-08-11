@@ -24,6 +24,8 @@ import { DrowserLogo } from "@/components/logos/drowser-logo";
 
 import { ToggleTheme } from "@/components/layout/toogle-theme";
 
+import { DATA } from "@/data";
+
 interface RouteProps {
   href: string;
   label: string;
@@ -67,11 +69,7 @@ export const Navbar = () => {
           <ToggleTheme />
 
           <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
-            <Link
-              aria-label="View on GitHub"
-              href="https://github.com/kinotio"
-              target="_blank"
-            >
+            <Link aria-label="View on GitHub" href={DATA.repo} target="_blank">
               <Github className="size-5" />
             </Link>
           </Button>
