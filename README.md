@@ -1,54 +1,23 @@
-# Shadcn Landing Page Template
+# Drowser and Drowser Studio site
 
-## <a href="https://ui.shadcn.com/" target="_blank">Shadcn</a> + <a href="https://nextjs.org/" target="_blank">Next.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
+The official website for Drowser and Drowser Studio.
 
-### This is a project conversion <a href="https://github.com/leoMirandaa/shadcn-vue-landing-page" target="_blank">Shadcn-Vue</a> to NextJS
+The project uses Bun and Nextra. To develop it locally, clone this repository and run the following command to start the local dev server:
 
-![Alt text](./public/demo-img.jpg)
-
-## Sections
-
-- [x] Navbar
-- [x] Sidebar(mobile)
-- [x] Hero
-- [x] Sponsors
-- [x] Benefits
-- [x] Features
-- [x] Testimonials
-- [x] Team
-- [x] Pricing
-- [x] Frequently Asked Questions(FAQ)
-- [x] Services
-- [x] Footer
-
-## Features
-
-- [x] Fully Responsive Design
-- [x] User Friendly Navigation
-- [x] Dark Mode
-
-## How to install
-
-1. Clone this repositoy:
-
-```bash
-git clone https://github.com/nobruf/shadcn-landing-page.git
+```sh
+bun install
 ```
 
-2. Go into project
-
-```bash
-cd shadcn-landing-page
+```sh
+bun dev
 ```
 
-3. Install dependencies
+And visit [localhost:3000](localhost:3000) to preview your changes.
 
-```bash
-npm install
-```
+## Contributing
 
-4. Run project
+When making a change, or creating a new page, please make sure to edit all language files. You can simply copy the content of the edited English document (or the edited paragraph) and apply it to other language files. And then, volunteers are welcome to help with any untranslated sections.
 
-```bash
-npm run dev
-```
+## Contributors
+
+- Main contributor is Ando ([@andostronaut](https://github.com/andostronaut))
