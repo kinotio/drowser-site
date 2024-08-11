@@ -1,5 +1,5 @@
 export const DATA = {
-  name: "Drowser",
+  name: "Drowser, explore new way to write tests",
   url: "https://drowser.kinotio.io",
   description:
     "A easy way to implement and write Selenium with TypeScript using Deno",
@@ -9,7 +9,16 @@ export const DATA = {
     linkedin: "https://linkedin.com/company/kinotio",
     x: "https://x.com/kinotio_io",
   },
-  keywords: ["Open Source", "Test", "Testing", "e2e", "Free", "Selenium"],
+  keywords: [
+    "Drowser",
+    "Drowser Studio",
+    "Open Source",
+    "Test",
+    "Testing",
+    "e2e",
+    "Free",
+    "Selenium",
+  ],
   color: {
     gradient: {
       from: "#6048e7",
