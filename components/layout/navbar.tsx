@@ -112,7 +112,7 @@ const MobileMenu = ({
 
         <SheetContent
           side="left"
-          className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
+          className="flex flex-col justify-between bg-card border-secondary"
         >
           <div>
             <SheetHeader className="mb-4 ml-4">

@@ -1,3 +1,5 @@
+"use client";
+
 import { ChevronRight, Github } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -7,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export const HeroSection = () => {
   return (
-    <section className="container w-full h-[85vh] relative">
+    <section className="container w-full relative">
       <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
           <div className="mx-auto text-center text-4xl md:text-9xl font-bold">
@@ -18,13 +20,17 @@ export const HeroSection = () => {
             <CodeBlock />
 
             <div className="mt-6 gap-2 flex justify-center">
-              <Button className="w-5/6 md:w-1/4 font-bold group/arrow ">
+              <Button
+                className="w-5/6 md:w-1/4 font-bold group/arrow"
+                onClick={() => {}}
+              >
                 Documentation
                 <ChevronRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </Button>
               <Button
                 className="w-5/6 md:w-1/4 font-bold group/arrow"
                 variant="outline"
+                onClick={() => {}}
               >
                 <Github className="size-5 mr-2" />
                 Github

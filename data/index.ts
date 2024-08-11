@@ -9,18 +9,7 @@ export const DATA = {
     linkedin: "https://linkedin.com/company/kinotio",
     x: "https://x.com/kinotio_io",
   },
-  keywords: [
-    "Open Source",
-    "Develop",
-    "Share",
-    "Startup",
-    "Openly",
-    "Imagine",
-    "Collaborative",
-    "Digital",
-    "Software",
-    "Application",
-  ],
+  keywords: ["Open Source", "Test", "Testing", "e2e", "Free", "Selenium"],
   color: {
     gradient: {
       from: "#6048e7",
@@ -90,6 +79,27 @@ export const DATA = {
     {
       icon: "Crown",
       name: "Your company",
+    },
+    {
+      icon: "Crown",
+      name: "Your company",
+    },
+  ],
+  faq: [
+    {
+      question: "What is this package used for?",
+      answer:
+        "This package allows you to write end-to-end (E2E) tests using Selenium WebDriver in Deno. It's designed to automate browser actions, enabling testing of web applications in different environments.",
+    },
+    {
+      question: "Why use Deno instead of Node.js?",
+      answer:
+        "Deno offers several advantages over Node.js, such as TypeScript support out of the box, secure by default (no access to files, network, or environment variables unless explicitly enabled), and a modern standard library. It's also designed with ES Modules, making it a good fit for modern JavaScript development.",
+    },
+    {
+      question: "What browsers are supported?",
+      answer:
+        "The package supports major browsers like Chrome, Firefox, and Edge. Ensure you have the corresponding WebDriver executable installed and available in your system's PATH.",
     },
   ],
 };
