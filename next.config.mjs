@@ -1,21 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.pravatar.cc",
-      },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "github.com",
-      },
-    ],
-  },
+import withNextra from "nextra";
+
+const nextraConfig = {
+  theme: "nextra-theme-docs",
+  themeConfig: "./theme.config.tsx",
 };
 
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+export default withNextra(nextraConfig)(nextConfig);

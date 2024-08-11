@@ -3,8 +3,6 @@
 import { useState, SetStateAction, Dispatch } from "react";
 import { Github, Menu } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
-import { useTheme } from "next-themes";
 
 import {
   Sheet,
@@ -13,7 +11,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../ui/sheet";
+} from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 import {
   NavigationMenu,
@@ -22,6 +20,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+import { DrowserLogo } from "@/components/logos/drowser-logo";
 
 import { ToggleTheme } from "@/components/layout/toogle-theme";
 
@@ -40,23 +39,14 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const { theme } = useTheme();
-
   return (
     <header className="w-full top-0 mx-auto sticky z-40 p-4 flex justify-center items-center bg-card border-b border-secondary">
       <div className="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <Image
-            src={theme === "light" ? "/drowser-dark.png" : "/drowser-light.png"}
-            width={100}
-            height={100}
-            alt="Drowser"
-            className="ml-2"
-            priority={true}
-          />
+          <DrowserLogo width={100} height={50} />
         </Link>
         {/* <!-- Mobile --> */}
-        <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} theme={theme} />
+        <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
         {/* <!-- Desktop --> */}
         <div className="hidden lg:flex justify-center items-center">
@@ -94,11 +84,9 @@ export const Navbar = () => {
 const MobileMenu = ({
   isOpen,
   setIsOpen,
-  theme,
 }: {
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
-  theme: string | undefined;
 }) => {
   return (
     <div className="flex items-center lg:hidden">
@@ -118,18 +106,7 @@ const MobileMenu = ({
             <SheetHeader className="mb-4 ml-4">
               <SheetTitle className="flex items-center">
                 <Link href="/" className="flex items-center">
-                  <Image
-                    src={
-                      theme === "light"
-                        ? "/drowser-dark.png"
-                        : "/drowser-light.png"
-                    }
-                    width={100}
-                    height={100}
-                    alt="Drowser"
-                    className="ml-2"
-                    priority={true}
-                  />
+                  <DrowserLogo width={100} height={50} />
                 </Link>
               </SheetTitle>
             </SheetHeader>
