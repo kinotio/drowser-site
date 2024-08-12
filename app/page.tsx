@@ -1,8 +1,8 @@
-import { HeroSection } from "@/components/layout/sections/hero";
-import { TrustedSection } from "@/components/layout/sections/trusted";
-import { FAQSection } from "@/components/layout/sections/faq";
+import { HeroSection } from '@/components/layout/sections/hero'
+import { TrustedSection } from '@/components/layout/sections/trusted'
+import { FAQSection } from '@/components/layout/sections/faq'
 
-import { FooterSection } from "@/components/layout/sections/footer";
+import { FooterSection } from '@/components/layout/sections/footer'
 
 export default function Home() {
   return (
@@ -12,5 +12,5 @@ export default function Home() {
       <FAQSection />
       <FooterSection />
     </>
-  );
+  )
 }

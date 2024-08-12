@@ -1,14 +1,14 @@
-"use client";
+'use client'
 
-import { ChevronRight, Github } from "lucide-react";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { tomorrowNightBright } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { ChevronRight, Github } from 'lucide-react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { tomorrowNightBright } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
-import { Button } from "@/components/ui/button";
-import GridPattern from "@/components/magicui/grid-pattern";
-import { BorderBeam } from "@/components/magicui/border-beam";
+import { Button } from '@/components/ui/button'
+import GridPattern from '@/components/magicui/grid-pattern'
+import { BorderBeam } from '@/components/magicui/border-beam'
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils'
 
 export const HeroSection = () => {
   return (
@@ -26,7 +26,7 @@ export const HeroSection = () => {
               <Button
                 className="w-5/6 md:w-1/4 font-bold group/arrow"
                 onClick={() => {
-                  window.open("/docs", "_blank");
+                  window.open('/docs', '_blank')
                 }}
               >
                 Documentation
@@ -36,7 +36,7 @@ export const HeroSection = () => {
                 className="w-5/6 md:w-1/4 font-bold group/arrow"
                 variant="outline"
                 onClick={() => {
-                  window.open("https://github.com/kinotio/drowser", "_blank");
+                  window.open('https://github.com/kinotio/drowser', '_blank')
                 }}
               >
                 <Github className="size-5 mr-2" />
@@ -64,13 +64,13 @@ export const HeroSection = () => {
           [15, 10],
         ]}
         className={cn(
-          "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-30%]"
+          '[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]',
+          'inset-x-0 inset-y-[-30%]'
         )}
       />
     </section>
-  );
-};
+  )
+}
 
 const CodeBlock = () => {
   const code = `
@@ -89,7 +89,7 @@ const CodeBlock = () => {
       ];
     })
     .catch((error) => console.log(error));
-  `;
+  `
 
   return (
     <div className="rounded-lg p-4 text-white mx-auto max-w-4xl">
@@ -100,7 +100,7 @@ const CodeBlock = () => {
         <BorderBeam colorFrom="#fff" colorTo="#fff" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CodeBlock;
+export default CodeBlock

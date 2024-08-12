@@ -1,6 +1,6 @@
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 
-import { DATA } from "@/data";
+import { DATA } from '@/data'
 
 export const TrustedSection = () => {
   return (
@@ -24,5 +24,5 @@ export const TrustedSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

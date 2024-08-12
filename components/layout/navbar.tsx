@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import { useState, SetStateAction, Dispatch } from "react";
-import { Github, Menu } from "lucide-react";
-import Link from "next/link";
+import { useState, SetStateAction, Dispatch } from 'react'
+import { Github, Menu } from 'lucide-react'
+import Link from 'next/link'
 
 import {
   Sheet,
@@ -11,35 +11,35 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/sheet'
+import { Separator } from '@/components/ui/separator'
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-} from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
-import { DrowserLogo } from "@/components/logos/drowser-logo";
+} from '@/components/ui/navigation-menu'
+import { Button } from '@/components/ui/button'
+import { DrowserLogo } from '@/components/logos/drowser-logo'
 
-import { ToggleTheme } from "@/components/layout/toogle-theme";
+import { ToggleTheme } from '@/components/layout/toogle-theme'
 
-import { DATA } from "@/data";
+import { DATA } from '@/data'
 
 interface RouteProps {
-  href: string;
-  label: string;
+  href: string
+  label: string
 }
 
 const routeList: RouteProps[] = [
   {
-    href: "docs",
-    label: "Docs",
+    href: 'docs',
+    label: 'Docs',
   },
-];
+]
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className="w-full top-0 mx-auto sticky z-40 p-4 flex justify-center items-center bg-card border-b border-secondary">
@@ -76,15 +76,15 @@ export const Navbar = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
 const MobileMenu = ({
   isOpen,
   setIsOpen,
 }: {
-  isOpen: boolean;
-  setIsOpen: Dispatch<SetStateAction<boolean>>;
+  isOpen: boolean
+  setIsOpen: Dispatch<SetStateAction<boolean>>
 }) => {
   return (
     <div className="flex items-center lg:hidden">
@@ -131,5 +131,5 @@ const MobileMenu = ({
         </SheetContent>
       </Sheet>
     </div>
-  );
-};
+  )
+}

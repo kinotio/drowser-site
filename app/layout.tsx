@@ -1,16 +1,16 @@
-import "@/app/globals.css";
+import '@/app/globals.css'
 
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 
-import { Navbar } from "@/components/layout/navbar";
-import { ThemeProvider } from "@/components/layout/theme-provider";
+import { Navbar } from '@/components/layout/navbar'
+import { ThemeProvider } from '@/components/layout/theme-provider'
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils'
 
-import { DATA } from "@/data";
+import { DATA } from '@/data'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     description: DATA.description,
     url: DATA.url,
     siteName: `${DATA.name}`,
-    locale: "en_US",
-    type: "website",
+    locale: 'en_US',
+    type: 'website',
   },
   robots: {
     index: true,
@@ -34,29 +34,29 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
   twitter: {
     title: `${DATA.name}`,
-    card: "summary_large_image",
+    card: 'summary_large_image',
   },
   verification: {
-    google: "",
-    yandex: "",
+    google: '',
+    yandex: '',
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background", inter.className)}>
+      <body className={cn('min-h-screen bg-background', inter.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -68,5 +68,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

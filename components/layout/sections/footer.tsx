@@ -1,14 +1,14 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { icons } from "lucide-react";
+import Link from 'next/link'
+import { icons } from 'lucide-react'
 
-import { Icon } from "@/components/ui/icon";
-import { KinotioLogo } from "@/components/logos/kinotio-logo";
+import { Icon } from '@/components/ui/icon'
+import { KinotioLogo } from '@/components/logos/kinotio-logo'
 
-import { getCurrentYear } from "@/lib/utils";
+import { getCurrentYear } from '@/lib/utils'
 
-import { DATA } from "@/data";
+import { DATA } from '@/data'
 
 export const FooterSection = () => {
   return (
@@ -77,5 +77,5 @@ export const FooterSection = () => {
         </section>
       </div>
     </footer>
-  );
-};
+  )
+}
