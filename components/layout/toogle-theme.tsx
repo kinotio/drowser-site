@@ -1,14 +1,14 @@
-import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
+import { useTheme } from 'next-themes'
+import { Moon, Sun } from 'lucide-react'
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button'
 
 export const ToggleTheme = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme()
 
   return (
     <Button
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       size="sm"
       variant="ghost"
       className="w-full justify-start"
@@ -25,5 +25,5 @@ export const ToggleTheme = () => {
 
       <span className="sr-only">Toggle theme</span>
     </Button>
-  );
-};
+  )
+}

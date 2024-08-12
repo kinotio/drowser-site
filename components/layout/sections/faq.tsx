@@ -3,9 +3,9 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion'
 
-import { DATA } from "@/data";
+import { DATA } from '@/data'
 
 export const FAQSection = () => {
   return (
@@ -32,5 +32,5 @@ export const FAQSection = () => {
         ))}
       </Accordion>
     </section>
-  );
-};
+  )
+}
