@@ -31,7 +31,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: (
       <span>
-        Copyright © ${getCurrentYear()} Developed by{' '}
+        {`Copyright © ${getCurrentYear()} Developed by `}
         <Link href={'https://kinotio.io'} target={'_blank'}>
           Kinotio
         </Link>
