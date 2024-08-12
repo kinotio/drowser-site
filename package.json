@@ -1,6 +1,7 @@
 {
   "name": "@kinotio/drowser-site",
   "version": "0.1.0",
+  "packageManager": "pnpm@9.7.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
