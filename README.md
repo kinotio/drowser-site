@@ -2,7 +2,7 @@
 
 The official website for Drowser and Drowser Studio.
 
-The project uses Bun and Nextra. To develop it locally, clone this repository and run the following command to start the local dev server:
+The project uses Pnpm and Nextra. To develop it locally, clone this repository and run the following command to start the local dev server:
 
 ```sh
 pnpm install

@@ -74,7 +74,7 @@ export const HeroSection = () => {
 
 const CodeBlock = () => {
   const code = `
-  import { driver } from "https://deno.land/x/drowser@v0.1.5/mod.ts";
+  import { driver } from "https://deno.land/x/drowser@${'v0.1.5'}/mod.ts";
 
   driver({ browser: "chrome" })
     .then(({ service }) => {
