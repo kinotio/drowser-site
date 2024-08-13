@@ -1,3 +1,5 @@
+import { BrowserKey } from '@/lib/definitions'
+
 export const DATA = {
   name: 'Drowser, explore new way to write tests',
   url: 'https://drowser.kinotio.io',
@@ -112,4 +114,5 @@ export const DATA = {
         "The package supports major browsers like Chrome, Firefox, and Edge. Ensure you have the corresponding WebDriver executable installed and available in your system's PATH.",
     },
   ],
+  supportedBrowsers: ['chrome', 'firefox', 'edge', 'safari'] as BrowserKey[],
 }
