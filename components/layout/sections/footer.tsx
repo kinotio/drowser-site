@@ -62,7 +62,7 @@ export const FooterSection = () => {
           </div>
         </div>
 
-        <section>
+        <section className="my-6">
           <h3>
             Copyright
             {` © ${getCurrentYear()} `}

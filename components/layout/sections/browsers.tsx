@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { ChromeIcon } from '@/components/icons/chrome-icon'
 import { FirefoxIcon } from '@/components/icons/firefox-icon'
 import { SafariIcon } from '@/components/icons/safari-icon'
@@ -24,7 +24,7 @@ export const BrowsersSection = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 w-full mt-6">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full mt-6">
         {DATA.supportedBrowsers.map((browser: string, idx: number) => {
           const BrowserIcon = iconByBrowser[browser as BrowserKey]
           return (
@@ -32,11 +32,9 @@ export const BrowsersSection = () => {
               key={idx}
               className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
             >
-              <CardHeader>
-                <CardTitle>
-                  <BrowserIcon />
-                </CardTitle>
-              </CardHeader>
+              <CardContent className="m-4 p-4">
+                <BrowserIcon />
+              </CardContent>
             </Card>
           )
         })}

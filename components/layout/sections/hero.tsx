@@ -17,7 +17,7 @@ export const HeroSection = () => {
       <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-28">
         <div className="space-y-8">
           <BlurFade delay={0.1}>
-            <div className="mx-auto text-center text-4xl md:text-9xl font-bold">
+            <div className="mx-auto text-center text-7xl md:text-9xl font-bold">
               <h1>Explore new way to write tests</h1>
             </div>
           </BlurFade>
@@ -89,13 +89,15 @@ const CodeBlock = () => {
   `
 
   return (
-    <div className="rounded-lg p-4 text-white mx-auto max-w-4xl">
-      <div className="relative p-4 bg-black rounded-lg mt-4 border border-secondary">
-        <SyntaxHighlighter language="typescript" style={tomorrowNightBright}>
-          {code}
-        </SyntaxHighlighter>
-        <BorderBeam colorFrom="#fff" colorTo="#fff" />
-      </div>
+    <div className="mx-auto max-w-4xl relative p-4 bg-black rounded-lg mt-4 border border-secondary">
+      <SyntaxHighlighter
+        language="typescript"
+        style={tomorrowNightBright}
+        wrapLongLines
+      >
+        {code}
+      </SyntaxHighlighter>
+      <BorderBeam colorFrom="#fff" colorTo="#fff" />
     </div>
   )
 }
