@@ -12,6 +12,7 @@ export const DATA = {
     x: 'https://x.com/kinotio_io',
   },
   repo: 'https://github.com/kinotio/drowser',
+  doc_repo: 'https://github.com/kinotio/drowser-site/tree/main',
   keywords: [
     'Drowser',
     'Drowser Studio',
