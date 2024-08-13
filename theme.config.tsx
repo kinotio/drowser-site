@@ -27,7 +27,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: DATA.social_url.discord,
   },
-  docsRepositoryBase: DATA.repo,
+  docsRepositoryBase: DATA.doc_repo,
   footer: {
     text: (
       <span>

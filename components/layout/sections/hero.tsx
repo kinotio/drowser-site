@@ -13,8 +13,8 @@ import { cn } from '@/lib/utils'
 
 export const HeroSection = () => {
   return (
-    <section className="container w-full relative">
-      <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-28">
+    <section className="w-full relative">
+      <div className="container relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-28">
         <div className="space-y-8">
           <BlurFade delay={0.1}>
             <div className="mx-auto text-center text-7xl md:text-9xl font-bold">
@@ -57,9 +57,6 @@ export const HeroSection = () => {
 
       <AnimatedGridPattern
         numSquares={30}
-        maxOpacity={0.4}
-        duration={3}
-        repeatDelay={1}
         className={cn(
           '[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]',
           'inset-x-0 inset-y-[-30%]'
@@ -89,7 +86,7 @@ const CodeBlock = () => {
   `
 
   return (
-    <div className="mx-auto max-w-4xl relative p-4 bg-black rounded-lg mt-4 border border-secondary">
+    <div className="mx-auto max-w-4xl relative p-4 bg-black rounded-lg mt-4 border border-secondary hidden md:block">
       <SyntaxHighlighter
         language="typescript"
         style={tomorrowNightBright}
