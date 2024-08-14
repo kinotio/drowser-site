@@ -1,5 +1,5 @@
 export const KinotioLogo = (
-  props: React.ComponentProps<"svg">
+  props: React.ComponentProps<'svg'>
 ): React.ReactElement => (
   <svg
     viewBox="0 0 2199 648"
@@ -60,4 +60,4 @@ export const KinotioLogo = (
       fill="currentColor"
     />
   </svg>
-);
+)
