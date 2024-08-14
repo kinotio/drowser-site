@@ -46,7 +46,28 @@
     "typescript": "^5"
   },
   "prettier": {
+    "trailingComma": "none",
+    "arrowParens": "always",
     "singleQuote": true,
-    "semi": false
+    "jsxSingleQuote": true,
+    "printWidth": 100,
+    "useTabs": false,
+    "semi": false,
+    "quoteProps": "consistent",
+    "bracketSpacing": true,
+    "overrides": [
+      {
+        "files": [
+          "**/*.css",
+          "**/*.scss"
+        ],
+        "options": {
+          "singleQuote": false
+        }
+      }
+    ]
+  },
+  "eslintConfig": {
+    "extends": "next/core-web-vitals"
   }
 }

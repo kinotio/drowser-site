@@ -1,5 +1,5 @@
 export const DrowserLogo = (
-  props: React.ComponentProps<"svg">
+  props: React.ComponentProps<'svg'>
 ): React.ReactElement => (
   <svg
     viewBox="0 0 643 126"
@@ -38,4 +38,4 @@ export const DrowserLogo = (
       fill="currentColor"
     />
   </svg>
-);
+)
