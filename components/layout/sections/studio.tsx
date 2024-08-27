@@ -32,7 +32,7 @@ const studioFeatures: { title: string; description: string; icon: string }[] = [
     title: 'Graph Visualization',
     description:
       'Easily interpret test results with dynamic graph visualizations, turning complex data into clear, actionable insights.',
-    icon: 'Share'
+    icon: 'Share2'
   },
   {
     title: 'AI-Powered Insights',
