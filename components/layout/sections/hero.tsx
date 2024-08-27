@@ -3,6 +3,7 @@
 import { ChevronRight, Github } from 'lucide-react'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { tomorrowNightBright } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import AnimatedGridPattern from '@/components/magicui/animated-grid-pattern'
@@ -19,8 +20,10 @@ export const HeroSection = () => {
         <div className='space-y-8'>
           <BlurFade delay={0.1}>
             <AnimatedGradientText className='bg-white dark:bg-slate-950'>
-              <span className='backdrop-blur-3xl'>Introducing Drowser Studio</span>
-              <ChevronRight className='ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5' />
+              <Link href='#studio' className='flex items-center justify-center'>
+                <span className='backdrop-blur-3xl'>Introducing Drowser Studio</span>
+                <ChevronRight className='ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5' />
+              </Link>
             </AnimatedGradientText>
           </BlurFade>
 
